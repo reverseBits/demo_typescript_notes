@@ -17,8 +17,8 @@ import {
 } from 'react-native';
 
 import {Colors} from 'react-native/Libraries/NewAppScreen';
-// import Variables from './src/variables/variables';
-import Functions from './src/functions/functions';
+import Variables from './src/variables/variables';
+// import Functions from './src/functions/functions';
 
 function App(): React.JSX.Element {
   const isDarkMode = useColorScheme() === 'dark';
@@ -41,8 +41,8 @@ function App(): React.JSX.Element {
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
           <Text style={styles.header}>Typescript Demo</Text>
-          {/* <Variables /> */}
-          <Functions />
+          <Variables />
+          {/* <Functions /> */}
         </View>
       </ScrollView>
     </SafeAreaView>
