@@ -4,6 +4,7 @@ import {Section} from '../components/Section';
 import TypeDemonstrations from './variablesPractical';
 
 const Variables = () => {
+  const demo;
   return (
     <View>
       <Text style={styles.subHeader}>Basic types</Text>
@@ -22,6 +23,10 @@ const Variables = () => {
       <Section title="Array">
         {'let fruits: string[] = ["apple", "mango", "banana"];\n'}
         {'let fruits: Array<string> = ["apple", "mango", "banana"];\n'}
+      </Section>
+      <Section title="Any">
+        {'let x: any = "123"; //string declaration\n'}
+        {'x = 123; //number declaration\n'}
       </Section>
       <Section title="Any">
         {'let x: any = "123"; //string declaration\n'}
