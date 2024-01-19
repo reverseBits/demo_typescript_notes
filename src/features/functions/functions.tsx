@@ -1,5 +1,5 @@
 import React, {useState} from 'react';
-import {StyleSheet, Text, View, Button, TextInput} from 'react-native';
+import {StyleSheet, Text, View, Button, TextInput, ScrollView} from 'react-native';
 
 const Functions: React.FC = () => {
   const [numberResult, setNumberResult] = useState<number | null>(null);
@@ -34,7 +34,7 @@ const Functions: React.FC = () => {
   };
 
   return (
-    <View style={styles.container}>
+    <ScrollView style={styles.container}>
       <Text style={styles.heading}>Function Demonstrations</Text>
 
       {/* Number Function */}
@@ -95,14 +95,14 @@ const Functions: React.FC = () => {
           <Text>Result: {JSON.stringify(arrayResult)}</Text>
         )}
       </View>
-    </View>
+    </ScrollView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
+    // justifyContent: 'center',
     padding: 16,
   },
   heading: {
