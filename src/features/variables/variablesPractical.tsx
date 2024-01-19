@@ -144,6 +144,7 @@ const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: 'bold',
     marginBottom: 16,
+    color: '#000'
   },
   row: {
     marginBottom: 16,
